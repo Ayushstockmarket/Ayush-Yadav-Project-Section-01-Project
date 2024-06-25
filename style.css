@@ -1,0 +1,661 @@
+:root {
+  --green: #00e77f;
+  --white: #ffff;
+  --light-bg: #4b4b4b;
+  --light-white: #aaa;
+  --black: #3d3d3d;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* overflow: hidden; */
+}
+html {
+  font-size: 63%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  background-color: var(--black);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--light-bg);
+}
+.flex-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  color: var(--white);
+}
+.flex-section .logo-top {
+  font-size: 2.5rem;
+}
+.flex-section a {
+  color: var(--white);
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.flex-section a:hover {
+  color: var(--green);
+}
+#menu-btn {
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: none;
+}
+/* Home Section part of the Main */
+.home-section-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 11rem;
+  width: 100%;
+  
+}
+.home-section-row .Home-content {
+  flex: 1 1 auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.home-section-row .Home-content .Online {
+  font-size: 14rem;
+  color: var(--white);
+}
+.Education {
+  font-size: 14rem;
+  color: var(--green);
+}
+.Home-content .ContactUs {
+  width: 14rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: 0px solid;
+  background-color: var(--light-bg);
+  color: var(--white);
+  font-size: 1.9rem;
+}
+.Home-content .ContactUs:hover {
+  border: 0px solid;
+  background-color: var(--white);
+  color: var(--black);
+  transition: 0.3s ease-in-out;
+}
+.contactus-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.Home-content .Ask {
+  width: 19rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: 0px solid;
+  background-color: var(--light-bg);
+  color: var(--white);
+  font-size: 1.9rem;
+}
+.Home-content .Ask:hover {
+  border: 0px solid;
+  background-color: var(--white);
+  color: var(--black);
+  transition: 0.3s ease-in-out;
+}
+.Home-image {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+}
+.Grid .box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--light-bg);
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.Grid .box i {
+  color: var(--green);
+  font-size: 5rem;
+}
+.box .Numbers-Inside-box {
+  color: var(--white);
+  font-size: 2rem;
+}
+.box .box-inside-content {
+  color: var(--light-white);
+  font-size: 2rem;
+}
+
+.Main-3-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.Main-3-section .Image-Section-Main-3 {
+  width: 100%;
+  flex: 1 1 auto;
+}
+.Main-3-section .Content-section-Main-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Main-3-section .Content-section-Main-3 .main3para_1 {
+  color: var(--white);
+  font-size: 6rem;
+}
+.Main-3-section .Content-section-Main-3 .main3para_2 {
+  color: var(--light-white);
+  font-size: 2rem;
+  width: 33rem;
+}
+.Main-3-section .Content-section-Main-3 button {
+  width: 15rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: 0px solid;
+  background-color: var(--light-bg);
+  color: var(--white);
+  font-size: 1.9rem;
+  margin-top: 2rem;
+}
+.Main-3-section .Content-section-Main-3 button:hover {
+  border: 0px solid;
+  background-color: var(--white);
+  color: var(--black);
+  transition: 0.3s ease-in-out;
+}
+
+/* -------------------------------------------- */
+.heading {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.heading span {
+  color: var(--green);
+}
+.Courses {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.Courses .slide {
+  width: 30rem;
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+.Courses .slide img {
+  height: 25rem;
+  width: 100%;
+}
+.Courses .slide h3 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  color: var(--white);
+}
+.Courses .slide p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+.Courses .swiper-pagination {
+  margin-top: -1rem;
+  position: relative;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+  background-color: var(--green);
+}
+.swiper-pagination-clickable .swiper-pagination-bullet:hover {
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+/* Form Section Will start now  */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.form h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+/* Inside it the Container form and image */
+.form .img-form-combined-conainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.img-form-combined-conainer .Image-container-Form-left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.img-form-combined-conainer .Image-container-Form-left-side img {
+  width: 100%;
+  height: 100%;
+}
+.img-form-combined-conainer .form-class {
+  width: 100%;
+  height: 100%;
+}
+.form-class .formre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.form-class .name {
+  width: 100%;
+  margin-top: 2rem;
+}
+.form-class .name p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  margin-bottom: 0.5rem;
+}
+.form-class .name input {
+  width: 100%;
+  border-radius: 0.3rem;
+  border: 0px solid;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  outline: none;
+  color: var(--white);
+}
+.form-class .email {
+  width: 100%;
+  margin-top: 2rem;
+}
+.form-class .email p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  margin-bottom: 0.5rem;
+}
+.form-class .email input {
+  width: 100%;
+  border-radius: 0.3rem;
+  border: 0px solid;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  outline: none;
+  color: var(--white);
+}
+.form-class .Number {
+  width: 100%;
+  margin-top: 2rem;
+}
+.form-class .Number p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  margin-bottom: 0.5rem;
+}
+.form-class .Number input {
+  width: 100%;
+  border-radius: 0.3rem;
+  border: 0px solid;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  outline: none;
+  color: var(--white);
+}
+
+.form-class .select-course {
+  width: 100%;
+  margin-top: 2rem;
+}
+.form-class .select-course select {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--white);
+  outline: none;
+  margin-bottom: 0.5rem;
+  border: 0px solid;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background-color: var(--light-bg);
+}
+.form-class .select-course p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  margin-bottom: 0.5rem;
+}
+.form-class .radio-button {
+  width: 100%;
+}
+.gender-options {
+  width: 100%;
+  margin-top: 2rem;
+}
+.gender-options p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  margin-bottom: 0.5rem;
+}
+.gender-options label {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  margin-bottom: 0.5rem;
+}
+.buttom-submit {
+  width: 25%;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--light-bg);
+}
+.buttom-submit:hover {
+  background-color: var(--white);
+  color: var(--light-bg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+/* Inside it the Container form and image end */
+/* form section will be end */
+.form h1{
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.form h1 span{
+color:var(--green);
+}
+.footer{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background-color: var(--light-bg);
+}
+.footer .nav-logo-footer{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer .nav-logo-footer i{
+font-size: 2rem;
+margin-left: 1rem;
+margin-top: 2rem;
+}
+.footer .copyright{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin-top: 2rem;
+border-top: .1px solid white;
+padding-top: 2rem;
+padding-bottom: 2rem;
+font-size: 2rem;
+}
+.footer .copyright span{
+color: var(--green);
+display: flex;
+align-items: center;
+}
+.footer .copyright span img{
+border-radius: 50%;
+height: 4rem;
+}
+/* Form section will be the end now */
+
+/* -------------------------------------- */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .Main-3-section .Content-section-Main-3 .main3para_1 {
+    color: var(--white);
+    font-size: 12rem;
+  }
+  .Main-3-section .Content-section-Main-3 .main3para_2 {
+    color: var(--light-white);
+    font-size: 4rem;
+    width: 78rem;
+  }
+  .flex-section .flex-nav {
+    position: absolute;
+
+    top: 99%;
+    left: 0;
+    right: 0;
+    border: 0.1rem solid var(--light-white);
+    background-color: var(--light-bg);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.4s ease-in-out;
+  }
+  .flex-section .flex-nav a {
+    display: block;
+    margin: 2rem;
+  }
+  .flex-section .flex-nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  /* Home Section of the part are main */
+  .home-section-row {
+    flex-direction: column-reverse;
+  }
+  .Main-3-section {
+    flex-direction: column;
+  }
+  /* .img-form-section {
+    flex-direction: column;
+  } */
+  .Courses .swiper-pagination {
+    margin-bottom: 5rem;
+  }
+  /* ------------------------------- */
+  .home-section-row {
+    flex-direction: column-reverse;
+  }
+  .home-section-row .Home-content .Online {
+    font-size: 6rem;
+    color: var(--white);
+  }
+  .home-section-row .Home-content .Education {
+    font-size: 6rem;
+    color: var(--green);
+  }
+  .Grid {
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  }
+  .Main-3-section .Content-section-Main-3 {
+    padding: 2rem;
+  }
+  .Main-3-section .Content-section-Main-3 .main3para_1 {
+    color: var(--white);
+    font-size: 4rem;
+  }
+  .Main-3-section .Content-section-Main-3 .main3para_2 {
+    color: var(--light-white);
+    font-size: 1.8rem;
+    width: 33rem;
+    text-align: center;
+  }
+  .form .img-form-combined-conainer {
+    padding: 2rem;
+  }
+  .contactus-button {
+    width: 27rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.9rem;
+  }
+  .contactus-button .ContactUs {
+    width: 12rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .contactus-button .Ask {
+    width: 12rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .Main-3-section {
+    flex-direction: column;
+  }
+  /* form section will be start  */
+  .img-form-combined-conainer {
+    width: 100%;
+    height: 50rem;
+    flex-direction: column;
+  }
+  .buttom-submit {
+    width: 47%;
+  }
+  /* form section will be end */
+  .copyright {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .home-section-row {
+    flex-direction: column-reverse;
+  }
+  .home-section-row .Home-content .Online {
+    font-size: 6rem;
+    color: var(--white);
+  }
+  .home-section-row .Home-content .Education {
+    font-size: 6rem;
+    color: var(--green);
+  }
+  .Grid {
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  }
+  .Main-3-section .Content-section-Main-3 {
+    padding: 2rem;
+  }
+  .Main-3-section .Content-section-Main-3 .main3para_1 {
+    color: var(--white);
+    font-size: 4rem;
+  }
+  .Main-3-section .Content-section-Main-3 .main3para_2 {
+    color: var(--light-white);
+    font-size: 1.8rem;
+    width: 33rem;
+    text-align: center;
+  }
+  .form .img-form-combined-conainer {
+    padding: 2rem;
+  }
+  .contactus-button {
+    width: 27rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.9rem;
+  }
+  .contactus-button .ContactUs {
+    width: 12rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .contactus-button .Ask {
+    width: 12rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .Main-3-section {
+    flex-direction: column;
+  }
+  /* form section will be start  */
+  .img-form-combined-conainer {
+    width: 100%;
+    height: 50rem;
+    flex-direction: column;
+  }
+  .buttom-submit {
+    width: 47%;
+  }
+  /* form section will be end */
+  .copyright {
+    font-size: 1.5rem;
+  }
+  .footer{
+    margin: 2rem;
+  }
+  .footer .copyright span img{
+    border-radius: 50%;
+    height: 4rem;
+    display: none;
+    }
+    .footer .copyright {
+      font-size: 1rem;
+  }
+  .Courses{
+    margin: 2rem;
+  }
+}
